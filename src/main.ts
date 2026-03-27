@@ -24,7 +24,7 @@ async function bootstrap() {
   );
 
   app.enableCors({
-    origin:      'https://axentrajk.netlify.app/',
+    origin:      'https://axentrajk.netlify.app',
     credentials: true,
   });
 

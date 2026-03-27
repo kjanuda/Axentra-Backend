@@ -74,7 +74,7 @@ export class AuthController {
       // 🔥 1. RECOMMENDER
       // =========================================
       if (role === 'recommender') {
-        const redirectUrl = new URL(`http://localhost:3000${redirectPath}`);
+        const redirectUrl = new URL(`https://axentrajk.netlify.app${redirectPath}`);
         redirectUrl.searchParams.set('email',     email);
         redirectUrl.searchParams.set('name',      name);
         redirectUrl.searchParams.set('photo',     photo || '');
@@ -100,7 +100,7 @@ export class AuthController {
         role:  user.role || 'user',
       });
 
-      const redirectUrl = new URL('http://localhost:3000/dashboard');
+      const redirectUrl = new URL('https://axentrajk.netlify.app/dashboard');
       redirectUrl.searchParams.set('token', token);
       redirectUrl.searchParams.set('email', email);
       redirectUrl.searchParams.set('name',  name);

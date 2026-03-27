@@ -15,7 +15,7 @@ export class AuthController {
   async googleAuth(@Query('state') state: string, @Res() res) {
     const params = new URLSearchParams({
       client_id:     process.env.GOOGLE_CLIENT_ID!,
-      redirect_uri:  'http://localhost:4000/auth/google/callback',
+      redirect_uri:  'http://axentra-backend-production-e185.up.railway.app/auth/google/callback',
       response_type: 'code',
       scope:         'email profile',
       access_type:   'offline',
